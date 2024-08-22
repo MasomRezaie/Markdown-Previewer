@@ -1,9 +1,9 @@
-import HomeBody from "./Component/HomeBody";
-import Nav from "./Component/Nav";
+import React from "react";
+
 function App() {
   return (
     <div>
-      Hello
+    
     </div>
   );
 }
