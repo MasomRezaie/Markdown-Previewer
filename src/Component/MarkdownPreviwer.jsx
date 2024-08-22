@@ -1,5 +1,8 @@
 import React from 'react'
-
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import remarkBreaks from 'remark-breaks'; 
+import remarkGfm from 'react'
 const initialMarkdown = `# Heading
 ## Sub-heading
 [Link](https://example.com)
@@ -16,11 +19,24 @@ Code block
 function MarkdownPreviwer() {
     const [markdown, setMarkdown] = useState(initialMarkdown);
 
+    
+  const handleChange = (e) => {
+    setMarkdown(e.target.value);
+  };
+
   return (
    <>
-   
+    <div id="heading">
+        <h1>Markdown Previewer</h1>
+      </div>
+      <div className="App">
+        <textarea id="editor" value={markdown} onChange={handleChange} />
+        <div id="preview">
+          <ReactMarkdown remarkPlugins={[remarkGfm, remarkBreaks]}>{markdown}</ReactMarkdown>
+        </div>
+      </div>
    </>
   )
 }
 
-export default MarkdownPreviwer
+export default MarkdownPreviwer;
