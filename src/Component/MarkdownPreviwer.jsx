@@ -25,16 +25,16 @@ function MarkdownPreviwer() {
 
   return (
     <>
-     <div id="heading">
-      <h1>Markdown Previewer</h1>
+      <div id="heading">
+       <h1>Markdown Previewer</h1>
      </div>
-    <div className="App">
+      <div className="App">
       <textarea id="editor" value={markdown} onChange={handleChange} />
       <div id="preview">
-          <ReactMarkdown remarkPlugins={[remarkGfm, remarkBreaks]}>{markdown}</ReactMarkdown>
-        </div>
+        <ReactMarkdown remarkPlugins={[remarkGfm, remarkBreaks]}>{markdown}</ReactMarkdown>
+      </div>
     </div>
-   </>
+    </>
   );
 }
 
