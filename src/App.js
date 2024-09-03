@@ -1,6 +1,6 @@
-import React from "react";
-import './App.css'
-import MarkdownPreviwer from './Component/MarkdownPreviwer'
+import React from 'react';
+import './App.css';
+import MarkdownPreviwer from './Component/MarkdownPreviwer';
 
 function App() {
   return (
