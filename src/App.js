@@ -4,7 +4,7 @@ import MarkdownPreviwer from './Component/MarkdownPreviwer';
 
 function App() {
   return (
-    <MarkdownPreviwer/>
+    <MarkdownPreviwer />
   );
 }
 
