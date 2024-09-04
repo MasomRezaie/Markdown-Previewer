@@ -31,7 +31,8 @@ function MarkdownPreviwer() {
       <div className="App">
         <textarea id="editor" value={markdown} onChange={handleChange} />
         <div id="preview">
-          <ReactMarkdown remarkPlugins={[remarkGfm, remarkBreaks]}>{markdown}</ReactMarkdown> </div>
+          <ReactMarkdown remarkPlugins={[remarkGfm, remarkBreaks]}>{markdown}</ReactMarkdown>
+        </div>
       </div>
     </>
   );
