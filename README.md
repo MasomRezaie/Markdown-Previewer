@@ -13,7 +13,7 @@ remove the extra file from react app.
 ## Demo 📸
 ![Project Demo](./src/assess/Capture.PNG)
 
-## Live link:{https://adorable-belekoy-04689b.netlify.app}
+## Live link: [https://deploy-preview-1--adorable-belekoy-04689b.netlify.app]
 
 
 ## Technologies Used 🛠️
